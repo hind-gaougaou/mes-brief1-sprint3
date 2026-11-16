@@ -14,3 +14,53 @@
 body {
   font-family: "Inter", system-ui, sans-serif;
 }
+main{
+  background-color: #f5f7fa;
+}
+
+header{
+  background:#0f4c81;
+  color: white;
+  padding: 20px;
+  font-size: 30px;
+}
+h1{
+  font-size: 40px;
+  padding-left: 50px;
+  padding-bottom: 0px;
+}
+p{
+  color: #5b6576;
+  padding: 0px 50px;
+
+}
+.filtrage{
+  background-color: white;
+  padding: 20px;
+  margin: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border: #5b6576;
+  border-radius: 15px;
+}
+input{
+  margin-bottom: 20px;
+}
+select{
+  padding: 20px;
+}
+
+
+
+button{
+  background-color: #0f4c81;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+}
+form{
+  background-color: white;
+  padding-right: 0px;
+  margin: 50px;
+  border-radius: 15px;
+}

@@ -14,7 +14,20 @@ let allCountries = [];
  */
 async function fetchCountries() {
   // TODO
+  try {
+    const responce= await fetch(API_URL)
+    console.log(responce)
+     const exist = await responce.json()
+   console.log(exist) 
+   createCountryCard()
+   filterCountries()
+  } catch (error) {
+    console.log(error)
+  }
+    
+
 }
+fetchCountries()
 
 /**
  * Crée la carte HTML d'un pays, sur le modèle de la maquette :
@@ -23,9 +36,27 @@ async function fetchCountries() {
  * @param {Object} country - Un pays tel que renvoyé par l'API.
  * @returns {HTMLElement} La carte, prête à être ajoutée à la grille.
  */
+const card=document.querySelector(".carte")
 function createCountryCard(country) {
   // TODO
+    allCountries.forEach((countrie)=>{
+   const image=document.createElement("img")
+     image.src=countrie.flags
+
+    const countrynom=document.createElement("h3")
+     countrynom.textContent= countrie.name
+
+    const capitall=document.createElement("p")
+    capitall.textContent= "capital" + countrie.capital
+
+    const population=document.createElement("p")
+    population.textContent="population :" + countrie.population
+    card.append(image,countrynom,capitall,population)
+  })
+  
+    
 }
+
 
 /**
  * Affiche une liste de pays dans la grille.
@@ -35,9 +66,12 @@ function createCountryCard(country) {
  *
  * @param {Array} countries - Les pays à afficher.
  */
-function displayCountries(countries) {
-  // TODO
-}
+// function displayCountries(countries) {
+//   // TODO
+
+  
+
+// }
 
 /**
  * Applique les deux filtres EN MÊME TEMPS sur allCountries :
@@ -49,7 +83,14 @@ function displayCountries(countries) {
  */
 function filterCountries() {
   // TODO
+  const selectcont=document.createElement("select")
+  selectcont.innerHTML=`<option value="all">Afrique</option>`
+
+
 }
+filterCountries()
+
+
 
 
 // ------------------------------------------------------------

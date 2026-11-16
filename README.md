@@ -2,7 +2,7 @@
 
 **Durée :** 1h30, en individuel
 **Compétences :** C3. Réaliser des interfaces utilisateur · C4. Développer la partie dynamique des interfaces utilisateur
-**Fourni :** la [maquette](https://www.figma.com/design/dEfkmkI7YYqka5NDYMSK3O) et ce starter
+**Fourni :** la [maquette](https://github.com/hind-gaougaou/mes-brief1-sprint3.git) et ce starter
 **Interdit :** documentation, anciens projets, IA, code d'un camarade
 
 ## Contexte
